@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Cambria, sans-serif;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_cZ-efuPkwRMCAeQF60ENjHprYMB5RNN4W00S5AZEdQjCPvzEiP3uVlkGX_o2hbLszgIbwwNRueFqwEpyCMjhMs5e62c8ntNsHJG5eRJHwd18bu2zK63RDMt2zIpI5TfW9TXHuLPIcs/s1600/DSC03659.gif");  
+}
+
+
+/*
+Side bar
+*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #13ccec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1adfff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #50e6ff;
+}
+
+.openbtn{
+  position: right;
+}
+
+#topnav {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*
+Side bar
+*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1adfff;
+  display:flex;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #50e6ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #lightblue;
+  color: white;
+}
+
+.Copyright{
+background-color: #1adfff;
+text-align: center;
+width:auto;
+padding: 10px; 
+font-family:bold;
+}
+
+.List{
+margin-left: 120px;
+margin-right: 120px;
+}
+
+img{
+  width: 350px;
+  height: 263px;
+}
+
+
+
+.Grid{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color:#ffffff;
+}
+
+.Landmarks1{
+ width: 350px;
+ height: 350px;
+ padding:25px;
+text-align:justify;
+margin-bottom:50px;
+margin-top:25px;
+
+}
+
+.Landmarks2{
+ width: 350px;
+ height: 350;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+.Landmarks3{
+width: 350px;
+ height: 350px;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+
+
+h5{text-align: center;
+font-size: 16px;
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Alba_VideoGallery.html">Gallery</a>
+  <a href="Alba_Contact Us.html">Contact Us</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="topnav">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <a href="index.html">Homepage</a>
+  <a href="Alba_Culture.html">Culture</a>
+  <a href="Alba_Cuisine.html">Cuisine</a>
+  <a href="Alba_Travel Tips.html">Travel Tips</a>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+}
+</script>
+
+<section class="List">
+  <h1>Places to visit</h1>
+
+  <div class="Grid">
+
+    <div class="Landmarks1">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/1d/55/bd/calle-crisologo-vigan.jpg?w=1000&h=-1&s=1">
+      <h5>Calle Crisologo (Vigan)</h5>
+      <p>Famous for its well-preserved Spanish colonial and Asian architecture, Calle Crisologo offers a nostalgic walk through cobblestone streets, antique houses, and heritage shops in Vigan, a UNESCO World Heritage Site.</p>
+    </div>
+
+    <div class="Landmarks2">
+      <img src="https://gttp.images.tshiftcdn.com/308117/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-4.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Cape Bojeador Lighthouse</h5>
+      <p>Located in Burgos, Ilocos Norte, this century-old lighthouse sits on a hill overlooking the West Philippine Sea, guiding ships and offering panoramic coastal views.</p>
+    </div>
+
+    <div class="Landmarks3">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/93/7d/fc/bantay-bell-tower.jpg?w=1000&h=800&s=1">
+      <h5>Bantay Bell Tower</h5>
+      <p>Standing beside the St. Augustine Church in Bantay, Ilocos Sur, this historic bell tower served as a watchtower during the Spanish colonial period.</p>
+    </div>
+
+    <div class="Landmarks1">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/fa/c9/48/front-of-church.jpg?w=1000&h=800&s=1">
+      <h5>Minor Basilica of Our Lady of The Rosary of Manaoag</h5>
+      <p>Located in Pangasinan, this revered Catholic basilica attracts pilgrims year-round who come to venerate the miraculous image of Our Lady of Manaoag.</p>
+    </div>
+
+    <div class="Landmarks2">
+      <img src="https://gttp.images.tshiftcdn.com/308774/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-9.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Saud Beach</h5>
+      <p>Located in Pagudpud, Ilocos Norte, Saud Beach is known for its white sand shores and turquoise waters — a peaceful tropical getaway ideal for swimming, snorkeling, and sunset watching.</p>
+    </div>
+
+    <div class="Landmarks3">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/e3/41/3b/morning-view.jpg?w=1000&h=800&s=1">
+      <h5>Bangui Windmills</h5>
+      <p>Stretching along the Bangui Bay in Ilocos Norte, these massive wind turbines are part of the Philippines' first wind farm and symbolize sustainable energy in the region.</p>
+    </div>
+
+    <div class="Landmarks1">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e1/c0/7d/photo7jpg.jpg?w=1000&h=800&s=1">
+      <h5>Ma-Cho Temple</h5>
+      <p>Located in La Union, this Taoist temple is dedicated to the Chinese sea goddess Mazu and features traditional architecture with panoramic views of the city and ocean.</p>
+    </div>
+
+    <div class="Landmarks2">
+      <img src="https://gttp.images.tshiftcdn.com/308115/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Pagburnayan Jar Factory</h5>
+      <p>Experience traditional pottery-making in Vigan at this heritage site where artisans shape clay jars (burnay) using ancient techniques passed down through generations.</p>
+    </div>
+
+    <div class="Landmarks3">
+      <img src="https://gttp.images.tshiftcdn.com/480779/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-3?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Blue Lagoon Beach</h5>
+      <p>Nestled in Pagudpud, Ilocos Norte, Blue Lagoon is known for its crystal-clear waters, fine white sand, and dramatic coastal cliffs — perfect for swimming and relaxation.</p>
+    </div>
+
+    <div class="Landmarks1">
+      <img src="https://gttp.images.tshiftcdn.com/308145/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-11.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Paoay Church</h5>
+      <p>Also known as the St. Augustine Church, this 18th-century baroque church is famous for its massive buttresses and has withstood multiple earthquakes over the centuries.</p>
+    </div>
+
+    <div class="Landmarks2">
+      <img src="https://gttp.images.tshiftcdn.com/308773/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-8.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Sand Dunes (Laoag City)</h5>
+      <p>The La Paz Sand Dunes offer a unique desert-like landscape where tourists can enjoy thrilling 4x4 rides and sandboarding amidst rolling golden hills.</p>
+    </div>
+
+    <div class="Landmarks3">
+      <img src="https://gttp.images.tshiftcdn.com/308144/x/0/12-best-tourist-spots-and-things-to-do-in-ilocos-sur-and-norte-provinces-10.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+      <h5>Kapurpurawan Rock Formation</h5>
+      <p>Carved by wind and sea, this stunning white limestone rock formation along the Burgos coast is a natural marvel and a favorite spot for photography and sightseeing.</p>
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+
+<footer>
+  <div class = "Copyright">
+  <p><b>Copyright@2024GVAA</b></p>
+</div>
+</html>

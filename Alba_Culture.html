@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Cambria, sans-serif;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_cZ-efuPkwRMCAeQF60ENjHprYMB5RNN4W00S5AZEdQjCPvzEiP3uVlkGX_o2hbLszgIbwwNRueFqwEpyCMjhMs5e62c8ntNsHJG5eRJHwd18bu2zK63RDMt2zIpI5TfW9TXHuLPIcs/s1600/DSC03659.gif");  
+}
+
+
+/*
+Side bar
+*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #13ccec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1adfff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #50e6ff;
+}
+
+.openbtn{
+  position: right;
+}
+
+#topnav {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*
+Side bar
+*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1adfff;
+  display:flex;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #50e6ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #lightblue;
+  color: white;
+
+
+}
+
+.Copyright{
+background-color: #1adfff;
+text-align: center;
+padding: 10px; 
+font-family:bold;
+}
+
+.List1{
+margin-left: 120px;
+margin-right: 120px;
+}
+
+.List2{
+margin-left: 120px;
+margin-right: 120px;
+}
+
+img{
+  width: 350px;
+  height: 263px;
+}
+
+
+
+.Grid1{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color:#ffffff;
+}
+
+.Grid2{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color:#ffffff;
+}
+
+.Landmarks1{
+ width: 350px;
+ height: 350px;
+ padding:25px;
+text-align:justify;
+margin-bottom:50px;
+margin-top:25px;
+
+}
+
+.Landmarks2{
+ width: 350px;
+ height: 350;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+.Landmarks3{
+width: 350px;
+ height: 350px;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+
+
+h5{text-align: center;
+font-size: 16px;
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Alba_VideoGallery.html">Gallery</a>
+  <a href="Alba_Contact Us.html">Contact Us</a>
+  <a href="index.html">Home</a>
+</div>
+
+  <div class="topnav">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <a href="Alba_Landmarks.html">Landmarks</a>
+  <a href="index.html">Homepage</a>
+  <a href="Alba_Cuisine.html">Cuisine</a>
+  <a href="Alba_Travel Tips.html">Travel Tips</a>
+
+
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+}
+</script>
+
+<section class ="List1">
+  <h1>Festivals</h1>
+
+  <div class = "Grid1">
+
+    <div class = "Landmarks1">
+      <img src="https://ilocosnortetraditionsgroup.wordpress.com/wp-content/uploads/2019/10/bac-bacarra.jpg">
+      <h5>Bac-Bacarra Festival</h5>
+      <p>Held in Bacarra, Ilocos Norte, this festival honors the town’s history and showcases cultural dances, agricultural abundance, and local traditions through street parades and performances.</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://ilocosnortetraditionsgroup.wordpress.com/wp-content/uploads/2019/10/guling-guling.jpg">
+      <h5>Guling-Guling Festival</h5>
+      <p>This pre-Lenten festival in Paoay, Ilocos Norte celebrates tradition, faith, and forgiveness. People receive a cross marked with rice flour on their foreheads as a blessing.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://ilocosnortetraditionsgroup.wordpress.com/wp-content/uploads/2019/10/pamulinawen.jpg">
+      <h5>Pamulinawen Festival</h5>
+      <p>Celebrated in Laoag City, this festival pays tribute to the city’s patron saint, St. William the Hermit, through vibrant parades and street dancing inspired by Ilocano heritage.</p>
+    </div>
+
+    <div class = "Landmarks1">
+      <img src="https://ilocosnortetraditionsgroup.wordpress.com/wp-content/uploads/2019/10/garlic-fsetiva.jpg">
+      <h5>Garlic Festival</h5>
+      <p>Held in the town of Sinait, this festival promotes Ilocos’ famous garlic industry with cooking competitions, exhibits, and folk dances to honor the region’s “white gold.”</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://ilocosfestival.video.blog/wp-content/uploads/2019/04/empanadafestvial-1.jpg?w=768">
+      <h5>Empanada Festival</h5>
+      <p>This festival in Batac City showcases the iconic Ilocos empanada with food fairs, cooking contests, and colorful parades to celebrate culinary creativity and community pride.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://ilocosfestival.video.blog/wp-content/uploads/2019/04/currimao-1-6.jpg">
+      <h5>Dinaklisan Festival</h5>
+      <p>Held in Currimao, Ilocos Norte, this coastal festival highlights the town’s fishing heritage through fluvial parades, seafood feasts, and traditional dances by the sea.</p>
+    </div>
+
+  </div>  
+</section>
+
+
+
+<section class ="List2">
+  <h1>Folklore</h1>
+
+  <div class = "Grid2">
+
+    <div class = "Landmarks1">
+      <img src="https://www.aswangproject.com/wp-content/uploads/2016/02/10599339_732501793483345_7830058803597964800_n.jpg">
+      <h5>Batibat / Bangungot</h5>
+      <p>The Batibat is a vengeful, obese demon said to cause “bangungot” or sudden death during sleep. It’s believed to sit on a person’s chest and suffocate them during nightmares.</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://pbs.twimg.com/media/DY_HEhYXcAE00v1.jpg">
+      <h5>Lampong, The Guardian Anito</h5>
+      <p>Lampong is a protective anito (spirit) in Ilocano lore who watches over families and households. It is often honored through offerings and prayers for good fortune and protection.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://www.aswangproject.com/wp-content/uploads/2018/03/Litao.jpg">
+      <h5>Litao, The Husband of Sirena</h5>
+      <p>Litao is a mythical freshwater being in Filipino folklore believed to be the husband of the Sirena (mermaid). He dwells in rivers and lakes and can lure or protect humans depending on his mood.</p>
+    </div>
+
+    <div class = "Landmarks1">
+      <img src="https://www.aswangproject.com/wp-content/uploads/2017/05/mangmangkik.jpg">
+      <h5>Mangmangkik, The Tree Spirits</h5>
+      <p>In Ilocano beliefs, Mangmangkik are spirits that inhabit trees, especially balete and acacia. Disturbing their dwellings can bring illness or misfortune unless rituals are performed.</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://www.aswangproject.com/wp-content/uploads/2017/03/turtle_monkey.jpeg">
+      <h5>The Monkey & The Turtle</h5>
+      <p>This well-known Filipino folktale teaches a moral lesson about intelligence versus trickery. It follows a clever turtle who outsmarts a greedy monkey in a series of humorous encounters.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://orig08.deviantart.net/e7f1/f/2009/050/3/e/pugot_by_isaiahpaul.jpg">
+      <h5>Pugot, The Headless Ghoul</h5>
+      <p>The Pugot is a fearsome, headless creature in Ilocano folklore that often haunts dark places like abandoned houses or forests. Despite its terrifying appearance, it's sometimes considered harmless.</p>
+    </div>
+
+  </div>  
+</section>
+
+
+
+</body>
+
+<footer>
+  <div class = "Copyright">
+  <p><b>Copyright@2024GVAA</p>
+</div>
+</html>

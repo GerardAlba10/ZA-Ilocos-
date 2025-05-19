@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Cambria, sans-serif;
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_cZ-efuPkwRMCAeQF60ENjHprYMB5RNN4W00S5AZEdQjCPvzEiP3uVlkGX_o2hbLszgIbwwNRueFqwEpyCMjhMs5e62c8ntNsHJG5eRJHwd18bu2zK63RDMt2zIpI5TfW9TXHuLPIcs/s1600/DSC03659.gif");  
+}
+
+
+/*
+Side bar
+*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #13ccec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1adfff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #50e6ff;
+}
+
+.openbtn{
+  position: right;
+}
+
+#topnav {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*
+Side bar
+*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1adfff;
+  display:flex;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #50e6ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #lightblue;
+  color: white;
+
+
+}
+
+.Copyright{
+background-color: #1adfff;
+text-align: center;
+padding: 10px; 
+font-family:bold;
+}
+
+.List{
+margin-left: 120px;
+margin-right: 120px;
+}
+
+img{
+  width: 350px;
+  height: 263px;
+}
+
+
+
+.Grid{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color:#ffffff;
+}
+
+.Landmarks1{
+ width: 350px;
+ height: 350px;
+ padding:25px;
+text-align:justify;
+margin-bottom:50px;
+margin-top:25px;
+
+}
+
+.Landmarks2{
+ width: 350px;
+ height: 350;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+.Landmarks3{
+width: 350px;
+ height: 350px;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+
+
+h5{text-align: center;
+font-size: 16px;
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Alba_VideoGallery.html">Gallery</a>
+  <a href="Alba_Contact Us.html">Contact Us</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="topnav">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <a href="Alba_Landmarks.html">Landmarks</a>
+  <a href="Alba_Culture.html">Culture</a>
+  <a href="index.html">Homepage</a>
+  <a href="Alba_Travel Tips.html">Travel Tips</a>
+  
+
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+}
+</script>
+
+<section class ="List">
+  <h1>Food for your cravings</h1>
+
+  <div class = "Grid">
+
+    <div class = "Landmarks1">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620613654/blog/dg0kwwib2g5eunminjpq.webp">
+      <h5>Vigan Longganisa</h5>
+      <p>Vigan Longganisa is a garlicky and slightly sour Filipino sausage native to Vigan. It’s often served fried and paired with rice and eggs for a hearty breakfast.</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620613945/blog/blgjeqbs9ydquk8nbm2y.webp">
+      <h5>Ilocos Empanada</h5>
+      <p>This deep-fried snack is made with a rice flour dough filled with grated green papaya, mung bean sprouts, longganisa, and egg, wrapped in orange-colored dough.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614073/blog/b1xcz5ycjvh8z10nf5ff.webp">
+      <h5>Bagnet</h5>
+      <p>Bagnet is a crispy pork belly dish from Ilocos that’s deep-fried to golden perfection. It's similar to lechon kawali but known for an even crunchier skin.</p>
+    </div>
+
+    <div class = "Landmarks1">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614201/blog/rx5cpg6lkezw4bjc6sb9.webp">
+      <h5>Pinakbet</h5>
+      <p>Pinakbet is a savory vegetable dish made with squash, bitter melon, eggplant, okra, and string beans, flavored with bagoong (fermented fish sauce).</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614413/blog/u11yiha58wsggu67pd8n.webp">
+      <h5>Okoy Tiyosko</h5>
+      <p>Okoy is a Filipino shrimp fritter made with glutinous rice, mung bean sprouts, and sometimes grated vegetables, deep-fried to a crispy golden brown.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614522/blog/mrhunyhqdpqwv1bosuqg.webp">
+      <h5>Poqui Poqui</h5>
+      <p>Poqui Poqui is a soft and savory Ilocano eggplant dish sautéed with garlic, onions, tomatoes, and beaten eggs — often eaten with rice.</p>
+    </div>
+
+    <div class = "Landmarks1">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614620/blog/hprh5fafpozteri8lm6e.webp">
+      <h5>Dudol</h5>
+      <p>Dudol (or dudul) is a native rice cake made with glutinous rice flour, coconut milk, and brown sugar — thick, sticky, and traditionally served during fiestas.</p>
+    </div>
+
+    <div class = "Landmarks2">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620614901/blog/m8wmqsnukzbt8hhjq2co.webp">
+      <h5>Chichacorn</h5>
+      <p>Chichacorn is a crunchy corn snack from Ilocos that’s deep-fried and comes in various flavors like cheese, garlic, and barbecue — perfect for munching.</p>
+    </div>
+
+    <div class = "Landmarks3">
+      <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620615136/blog/wrlepjul7yemsklcbsan.webp">
+      <h5>Tupig</h5>
+      <p>Tupig is a grilled rice cake made from glutinous rice, coconut milk, and brown sugar, wrapped in banana leaves and cooked over charcoal.</p>
+    </div>
+
+  </div>  
+</section>
+
+
+</body>
+<footer>
+  <div class = "Copyright">
+  <p><b>Copyright@2024GVAA</p>
+</div>
+</html>

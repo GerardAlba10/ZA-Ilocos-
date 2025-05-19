@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Cambria, sans-serif;
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_cZ-efuPkwRMCAeQF60ENjHprYMB5RNN4W00S5AZEdQjCPvzEiP3uVlkGX_o2hbLszgIbwwNRueFqwEpyCMjhMs5e62c8ntNsHJG5eRJHwd18bu2zK63RDMt2zIpI5TfW9TXHuLPIcs/s1600/DSC03659.gif");  
+}
+
+
+/*
+Side bar
+*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #13ccec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1adfff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #50e6ff;
+}
+
+.openbtn{
+  position: right;
+}
+
+#topnav {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*
+Side bar
+*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1adfff;
+  display:flex;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #50e6ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #lightblue;
+  color: white;
+
+
+}
+
+.Copyright{
+background-color: #1adfff;
+text-align: center;
+padding: 10px; 
+font-family:bold;
+}
+
+.List{
+margin-left: 120px;
+margin-right: 120px;
+}
+
+img{
+  width: 350px;
+  height: 263px;
+}
+
+
+
+.Grid{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color:#ffffff;
+}
+
+.Landmarks1{
+ width: 350px;
+ height: 350px;
+ padding:25px;
+text-align:justify;
+margin-bottom:50px;
+margin-top:25px;
+
+}
+
+.Landmarks2{
+ width: 350px;
+ height: 350;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+.Landmarks3{
+width: 350px;
+ height: 350px;
+  padding:25px;
+margin-bottom:50px;
+margin-top:25px;
+ text-align:justify;
+
+}
+
+
+h5{text-align: center;
+font-size: 16px;
+
+}
+
+</style>
+</head>
+<body>
+
+ <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Alba_VideoGallery.html">Gallery</a>
+  <a href="Alba_Contact Us.html">Contact Us</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="topnav">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <a href="Alba_Landmarks.html">Landmarks</a>
+  <a href="Alba_Culture.html">Culture</a>
+  <a href="Alba_Cuisine.html">Cuisine</a>
+  <a href="index.html">Homepage</a>
+
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+}
+</script>
+
+<section class ="List">
+  <h1>Tips for Travel Date, Transport & Locals Interaction</h1>
+
+  <div class = "Grid">
+
+   <div class = "Landmarks1">
+    <h5>When to Travel</h5>
+       <li><b>Off Season</b><br><br>
+      November - May : Due to Wet and Dry climates
+    </li><br>
+
+    <li><b>Cool Season</b><br><br>
+      December - February : Cold Temperature
+    </li><br>
+
+    <li><b>Peak Season</b><br><br>
+     April - May : Summer
+    </li>
+  </ul>
+   </div>
+
+<div class = "Landmarks2">
+  <h5>How to Travel</h5>
+  <ul>
+    <li><b>By Bus</b><br><br>
+      Buses are a common way to reach the region from Manila. Major bus lines include Dominion Transit, Partas, Victory Liner, and Five Star. Dominion and Partas cover more northern destinations, while Victory and Five Star mostly serve Pangasinan.
+    </li><br>
+
+    <li><b>By Vehicle</b><br><br>
+      You can drive via the Tarlac-Pangasinan-La Union Expressway (TPLEx) or the free alternative, Route 2. Other scenic routes include the Maharlika Highway near Pagudpud and Rte 114 through the Caraballo Mountains. Several roads also connect Ilocos to the Cordilleras.
+    </li><br>
+
+    <li><b>By Plane</b><br><br>
+      Laoag International Airport (LAO) is the main airport with regular commercial flights. Smaller airports in Lingayen, San Fernando, and Vigan are used for charter flights or pilot training.
+    </li>
+  </ul>
+</div>
+
+
+   <div class = "Landmarks3">
+    <h5>Language of Locals</h5>
+      <li><b>Local Language</b><br><br>
+      Locals speak Ilokano and Pangasinan (also known as Pangalatok, which is a derogatory term). Other languages include Igorot languages like Ibaloi in Pangasinan and Itneg (Tingguian) in Abra, as well as Sambal in the southwest and Bolinao in the west of the island. Residents of communities around the Nueva Ecija border speak Tagalog as their first language, and it is also spoken as a second language in other parts of the region.
+    </li><br>
+
+    <li><b>English Fluency</b><br><br>
+     Due to their superior ability to enunciate English-specific sounds that are absent from most other main Philippine languages, such as Tagalog, Ilocanos are frequently seen by the majority of Filipinos as having superior English competence among the major Filipino ethnic groups. This view might also be influenced by the fact that Ilocanos make up the majority of the Filipino immigrant populations in the United States.
+    </li><br>
+
+    
+   </div>
+
+  
+
+</div>  
+</section>
+
+</body>
+<footer>
+  <div class = "Copyright">
+  <p><b>Copyright@2024GVAA</p>
+</div>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Cambria, sans-serif;
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_cZ-efuPkwRMCAeQF60ENjHprYMB5RNN4W00S5AZEdQjCPvzEiP3uVlkGX_o2hbLszgIbwwNRueFqwEpyCMjhMs5e62c8ntNsHJG5eRJHwd18bu2zK63RDMt2zIpI5TfW9TXHuLPIcs/s1600/DSC03659.gif");  
+}
+
+
+/*
+Side bar
+*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #13ccec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1adfff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #50e6ff;
+}
+
+.openbtn{
+  position: right;
+}
+
+#topnav {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*
+Side bar
+*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1adfff;
+  display:flex;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #50e6ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #lightblue;
+  color: white;
+
+
+}
+
+.Copyright{
+background-color: #1adfff;
+text-align: center;
+padding: 10px; 
+font-family:bold;
+}
+
+
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 50%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-450%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+
+.Homepage{
+ text-align: center;
+ margin-right:120px;
+ margin-left:120px;
+ margin-bottom: 35px;
+ border:5px;
+
+.Header{
+  text-align:left;
+}
+
+.desc{
+  font-size: 25px;
+  text-align:justify;
+  background-color: #ffffff;
+  border: 5px solid ;
+}
+</style>
+</head>
+<body>
+
+  
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Alba_VideoGallery.html">Gallery</a>
+  <a href="Alba_Contact Us.html">Contact Us</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="topnav">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <a href="Alba_Landmarks.html">Landmarks</a>
+  <a href="Alba_Culture.html">Culture</a>
+  <a href="Alba_Cuisine.html">Cuisine</a>
+  <a href="Alba_Travel Tips.html">Travel Tips</a>
+
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("topnav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+}
+</script>
+
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/1d/55/bd/calle-crisologo-vigan.jpg?w=1000&h=600&s=1" 
+             alt="Calle Crisologo"
+             style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <a href="#carousel__slide4" class="carousel__prev">‹</a>
+      <a href="#carousel__slide2" class="carousel__next">›</a>
+    </li>
+
+    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1620613945/blog/blgjeqbs9ydquk8nbm2y.webp" 
+             alt="Vigan View"
+             style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <a href="#carousel__slide1" class="carousel__prev">‹</a>
+      <a href="#carousel__slide3" class="carousel__next">›</a>
+    </li>
+
+    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://ilocosnortetraditionsgroup.files.wordpress.com/2019/10/guling-guling.jpg" 
+             alt="Guling-Guling Festival"
+             style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <a href="#carousel__slide2" class="carousel__prev">‹</a>
+      <a href="#carousel__slide4" class="carousel__next">›</a>
+    </li>
+
+    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/65/76/14/getting-sunburned-and.jpg?w=1000&h=800&s=1" 
+             alt="Windmills"
+             style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <a href="#carousel__slide3" class="carousel__prev">‹</a>
+      <a href="#carousel__slide5" class="carousel__next">›</a>
+    </li>
+
+      <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://islandsph.com/wp-content/uploads/2022/12/Ilocos-Region-Map.jpg" 
+             alt="Windmills"
+             style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <a href="#carousel__slide4" class="carousel__prev">‹</a>
+      <a href="#carousel__slide1" class="carousel__next">›</a>
+    </li>
+
+</section>
+
+<section class = "Homepage">
+  <h1 class = "header">Welcome to ZA Ilocos!</h1>
+  <p class = "desc">Today you will witness the information about ZA Ilocos! The First region of our country. Those who are interested in learning about what, how, when, where and why tourists visit this place will be able to satisfy their curiosity from the delish of cuisines to the branchful traditions the locals follow and perform. So what are you waiting for? Plan it, Fly, Explore and experience ZA Ilocos!</p>
+  
+  <h2 class = "header">Sources</h2><br><br>
+   <p class = "desc">https://www.klook.com/en-PH/blog/what-to-eat-ilocos/<br>
+    https://www.tripadvisor.com.ph/Attractions-g2152350-Activities-c47-Ilocos_Region_Luzon.html
+https://guidetothephilippines.ph/articles/what-to-experience/ilocos-sur-norte-tourist-spot <br>
+https://ilocosnortetraditionsgroup.wordpress.com/<br>
+https://ilocanoculture.wordpress.com/2017/03/09/cultures-traditions-and-beliefs/<br>
+https://www.aswangproject.com/philippine-mythology/ilokano-mythology-beliefs/ <br>
+https://ilocosfestival.video.blog/2019/04/16/ilocos-norte-province-festivals-lakbaynorte/ <br>
+<br>
+https://farandawayadventures.com/destination-snapshots/ilocos-norte-philippines/#:~:text=December%20to%20February%20are%20the,during%20summer%2C%20April%20to%20May. <br>
+https://en.wikivoyage.org/wiki/Ilocos#:~:text=Ilocos%2C%20officially
+<br>%20named%20Ilocos%20Region,%2C%20beaches%2C%20and%20nature%20attractions.
+
+   </p>
+</section>
+</body>
+
+<footer>
+  <div class = "Copyright">
+  <p><b>Copyright@2024GVAA</p>
+</div>
+</footer>
+</html>
